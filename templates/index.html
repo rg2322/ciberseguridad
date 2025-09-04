@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Contenedor principal del login */
+        .login-container {
+            background: #333;
+            color: #f0f0f0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        /* Título */
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #dcdcdc;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Estilo del formulario */
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #444;
+            border-radius: 5px;
+            background-color: #222;
+            color: #f0f0f0;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border: 2px solid #00bcd4;
+            outline: none;
+        }
+
+        .form-group input::placeholder {
+            color: #aaa;
+        }
+
+        /* Estilo del botón */
+        .btn-login {
+            width: 100%;
+            padding: 14px;
+            background-color: #00bcd4;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-login:hover {
+            background-color: #008c9e;
+        }
+
+        /* Estilo de los enlaces */
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+
+        .footer a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animación de enfoque */
+        .form-group input:focus {
+            border-color: #00bcd4;
+            box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Acceder</h2>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Usuario" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Iniciar sesión</button>
+        </form>
+
+        <div class="footer">
+            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            <p>No tienes cuenta? <a href="#">Regístrate</a></p>
+        </div>
+    </div>
+</body>
+</html>
